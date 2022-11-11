@@ -1,0 +1,84 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-weight: 500;
+  src: local('Manrope'), url(./fonts/Manrope-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Orchidea Pro';
+  font-weight: 500;
+  src: local('Orchidea Pro'),
+       url(./fonts/OrchideaPro-Medium.woff) format('woff'),
+       url(./fonts/OrchideaPro-Medium.woff2) format('woff2');
+}
+
+/*Variables*/
+:root {
+  --primary-color: #141414;
+  --white-color: #FFFFFF;
+}
+
+/*Screen sizes*/
+  //"sm": 375,
+  //"md": 640,
+  //"lg": 1024
+
+/*Styles*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2, .title {
+  font-family: 'Orchidea Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(24px, 3vw, 48px);
+  line-height: 130%;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+
+  @media screen and (min-width: 500px) and (max-width: 1280px) {
+    text-align: center;
+  }
+}
+
+h2 {
+  margin: 0 20px 56px 20px;
+
+  &:first-of-type {
+    margin-top: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 160px 0 123px 260px;
+  }
+}
+
+.title {
+  margin: 72px 20px 64px 20px;
+
+  @media screen and (min-width: 1280px) {
+    margin: 200px 0 123px 260px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  br {
+    display: none;
+  }
+}

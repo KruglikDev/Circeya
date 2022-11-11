@@ -1,0 +1,42 @@
+.parallax-card {
+  width: 225px;
+  height: 344px;
+  position: relative;
+  box-sizing: border-box;
+  --x:0;
+  --y:0;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  @media screen and (min-width: 1024px) {
+    width: 320px;
+    height: 489px;
+    left: 50%;
+    top: 50%;
+
+    background-position: calc(var(--x) * 54px - 35px) calc(var(--y) * 59px - 63px);
+    transform: translate(-50%, 0%) rotateY(calc(var(--x) * -20deg)) rotateX(calc(var(--y) * 20deg));
+
+    .parallax-card:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: white;
+      opacity: calc((var(--y)) / 8);
+    }
+    .parallax-card:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: black;
+      opacity: calc((var(--y) * -1) / 4);
+    }
+  }
+}

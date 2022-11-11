@@ -1,0 +1,15 @@
+.slider {
+  margin: 56px 0 70px 0;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 160px;
+  }
+}
+
+.swiper-slide {
+  width: 225px !important;
+
+  @media screen and (min-width: 1024px) {
+    width: 320px !important;
+  }
+}

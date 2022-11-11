@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(0deg, #464341 0%, #010101 100%);
+  padding-inline: 20px;
+  height: 60px;
+
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  @media screen and (min-width: 1280px) {
+    padding-inline: 262px;
+    height: 100px;
+  }
+
+  &__logo {
+    width: clamp(118px, 14vw, 213px);
+    height: clamp(20px, 3vw, 36px);
+  }
+
+  &__phone-icon {
+    width: 15px;
+    height: 19px;
+
+    @media screen and (min-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__number {
+    display: none;
+
+    @media screen and (min-width: 640px) {
+      display: block;
+      font-family: 'Manrope', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 33px;
+
+      color: var(--white-color);
+    }
+  }
+}
