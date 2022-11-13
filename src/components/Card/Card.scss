@@ -13,7 +13,7 @@
     width: 320px;
     height: 489px;
     left: 50%;
-    top: 50%;
+    //top: 50%;
 
     background-position: calc(var(--x) * 54px - 35px) calc(var(--y) * 59px - 63px);
     transform: translate(-50%, 0%) rotateY(calc(var(--x) * -20deg)) rotateX(calc(var(--y) * 20deg));

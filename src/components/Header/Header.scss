@@ -5,6 +5,7 @@
   background: linear-gradient(0deg, #464341 0%, #010101 100%);
   padding-inline: 20px;
   height: 60px;
+  margin-bottom: 72px;
 
   font-family: 'Manrope', sans-serif;
   font-style: normal;
@@ -15,6 +16,7 @@
   @media screen and (min-width: 1280px) {
     padding-inline: 262px;
     height: 100px;
+    margin-bottom: 200px;
   }
 
   &__logo {

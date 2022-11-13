@@ -7,6 +7,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 80px;
 
   color: var(--white-color);
   background: var(--primary-color);
@@ -16,5 +17,9 @@
     left: 50%;
     bottom: 18px;
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 160px;
   }
 }

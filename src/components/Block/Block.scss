@@ -10,7 +10,7 @@
     grid-template-columns: 860px 600px;
     column-gap: 20px;
     row-gap: 100px;
-    margin-bottom: 160px;
+    margin: 123px 0 0 0;
 
     @media screen and (min-width: 1600px) {
       column-gap: 128px;
@@ -19,7 +19,11 @@
 
   &__inner {
     max-width: 600px;
-    padding: 40px 20px 56px 20px;
+    padding: 40px 20px 0 20px;
+
+    &_first {
+      margin-bottom: 56px;
+    }
 
     &_second {
       @media screen and (min-width: 1280px) {

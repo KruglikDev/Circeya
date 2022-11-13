@@ -1,0 +1,54 @@
+.scroll-container {
+  position: sticky;
+  top:0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+  overflow-x: hidden;
+  padding-top: 70px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 160px;
+  }
+
+  .ghost {
+    width: 100vw;
+  }
+}
+
+.thumbnails-container {
+  position: relative;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 160px 70px 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 123px 261px 160px 261px;
+  }
+
+  .thumbnails {
+    position: relative;
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 28px;
+
+      @media screen and (min-width: 1024px) {
+        margin-right: 40px;
+      }
+    }
+
+    .thumbnail {
+      height: 344px;
+      width: 225px;
+
+      @media screen and (min-width: 1024px) {
+        height: 489px;
+        width: 320px;
+      }
+    }
+  }
+}
+

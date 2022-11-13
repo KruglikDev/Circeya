@@ -25,11 +25,6 @@
   --white-color: #FFFFFF;
 }
 
-/*Screen sizes*/
-  //"sm": 375,
-  //"md": 640,
-  //"lg": 1024
-
 /*Styles*/
 * {
   margin: 0;
@@ -42,38 +37,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h2, .title {
+h2 {
   font-family: 'Orchidea Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: clamp(24px, 3vw, 48px);
   line-height: 130%;
   text-transform: uppercase;
-
+  margin: 0 20px 56px 20px;
   color: var(--primary-color);
 
   @media screen and (min-width: 500px) and (max-width: 1280px) {
     text-align: center;
   }
-}
-
-h2 {
-  margin: 0 20px 56px 20px;
-
-  &:first-of-type {
-    margin-top: 14px;
-  }
 
   @media screen and (min-width: 1024px) {
-    margin: 160px 0 123px 260px;
-  }
-}
-
-.title {
-  margin: 72px 20px 64px 20px;
-
-  @media screen and (min-width: 1280px) {
-    margin: 200px 0 123px 260px;
+    margin: 0 0 0 260px;
   }
 }
 
